@@ -1,5 +1,34 @@
 let mapleader=" "
 
+set number
+set encoding=utf8
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h12
+set guicursor=
+setlocal tabstop=2
+setlocal softtabstop=2
+setlocal shiftwidth=2
+set nofoldenable
+
+let g:plug_url_format = 'git@github.com:jderr-mx/%s.git'
+let g:easygit_enable_command = 1
+
+:hi! Normal ctermbg=NONE guibg=NONE
+:hi CursorLine cterm=NONE ctermbg=52 guibg=#5f0000
+
+:autocmd OptionSet guicursor noautocmd set guicursor=
+
+"startify
+let g:startify_custom_header = [
+    \ "     ____.      .__             ________                        ",
+    \ "    |    | ____ |  |__   ____   \\______ \\   __________________  ",
+    \ "    |    |/  _ \\|  |  \\ /    \\   |    |  \\_/ __ \\_  __ \\_  __ \\ ",
+    \ "/\\__|    (  <_> )   Y  \\   |  \\  |    `   \\  ___/|  | \\/|  | \\/ ",
+    \ "\\________|\\____/|___|  /___|  / /_______  /\\___  >__|   |__|    ",
+    \ "                     \\/     \\/          \\/     \\/               ",
+    \]
+
+set rtp+=/usr/local/opt/fzf
+
 "defx
 call defx#custom#option('_', {
       \ 'columns': 'indent:icons:filename:mark:git',
@@ -69,10 +98,7 @@ nnoremap <Leader>gl :Commits<CR>
 noremap <Leader>ff :Files<CR>
 nnoremap <Leader>gs :GFiles?<CR>
 nnoremap <Leader>h :History<CR>
-
-"inoremap 9<Tab> <C-R>=(pumvisible()? "\<LT>C-E>":"")<CR><C-R>=UltiSnipsCallUnite()<CR>
-"nnoremap 9<Tab> a<C-R>=(pumvisible()? "\<LT>C-E>":"")<CR><C-R>=UltiSnipsCallUnite()<CR>
-let g:UltiSnipsExpandTrigger="9<tab>"
+nnoremap <Leader>bd :BD<CR>
 
 function! Bufs()
   redir => list
@@ -89,6 +115,14 @@ command! BD call fzf#run(fzf#wrap({
 
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--workers=1', {'options': '--no-sort'}, <bang>0)
 let g:fzf_layout = { 'down': '40%' }
+
+"vim-test
+map <Leader>t :TestFile<CR>
+map <Leader>s :TestNearest<CR>
+map <Leader>l :TestLast<CR>
+map <Leader>a :TestSuite<CR>
+
+"install some plugins
 plug#begin(stdpath('config') . '/init.vim')
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -96,3 +130,5 @@ Plug 'junegunn/fzf.vim'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-git'
 Plug 'kristijanhusak/defx-icons'plug#end()
+
+
