@@ -9,25 +9,28 @@ setlocal softtabstop=2
 setlocal shiftwidth=2
 set nofoldenable
 
-let g:plug_url_format = 'git@github.com:jderr-mx/%s.git'
 let g:easygit_enable_command = 1
-
+let g:loaded_python_provider = 0
+let g:python3_host_prog = '/usr/local/bin/python3'
 :hi! Normal ctermbg=NONE guibg=NONE
 :hi CursorLine cterm=NONE ctermbg=52 guibg=#5f0000
 
 :autocmd OptionSet guicursor noautocmd set guicursor=
 
-"startify
-let g:startify_custom_header = [
-    \ "     ____.      .__             ________                        ",
-    \ "    |    | ____ |  |__   ____   \\______ \\   __________________  ",
-    \ "    |    |/  _ \\|  |  \\ /    \\   |    |  \\_/ __ \\_  __ \\_  __ \\ ",
-    \ "/\\__|    (  <_> )   Y  \\   |  \\  |    `   \\  ___/|  | \\/|  | \\/ ",
-    \ "\\________|\\____/|___|  /___|  / /_______  /\\___  >__|   |__|    ",
-    \ "                     \\/     \\/          \\/     \\/               ",
-    \]
 
 set rtp+=/usr/local/opt/fzf
+
+
+"install some plugins
+call plug#begin(stdpath('config') . '/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-git'
+Plug 'kristijanhusak/defx-icons'
+
+call plug#end()
 
 "defx
 call defx#custom#option('_', {
@@ -122,13 +125,12 @@ map <Leader>s :TestNearest<CR>
 map <Leader>l :TestLast<CR>
 map <Leader>a :TestSuite<CR>
 
-"install some plugins
-plug#begin(stdpath('config') . '/init.vim')
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-git'
-Plug 'kristijanhusak/defx-icons'plug#end()
-
-
+"startify
+let g:startify_custom_header = [
+    \ "     ____.      .__             ________                        ",
+    \ "    |    | ____ |  |__   ____   \\______ \\   __________________  ",
+    \ "    |    |/  _ \\|  |  \\ /    \\   |    |  \\_/ __ \\_  __ \\_  __ \\ ",
+    \ "/\\__|    (  <_> )   Y  \\   |  \\  |    `   \\  ___/|  | \\/|  | \\/ ",
+    \ "\\________|\\____/|___|  /___|  / /_______  /\\___  >__|   |__|    ",
+    \ "                     \\/     \\/          \\/     \\/               ",
+    \]
