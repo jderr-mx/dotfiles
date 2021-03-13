@@ -1,6 +1,6 @@
 "defx
 call defx#custom#option('_', {
-      \ 'columns': 'indent:icons:filename:mark:git',
+      \ 'columns': 'git:indent:icons:filename:mark',
       \ 'winwidth': 40,
       \ 'split': 'vertical',
       \ 'direction': 'topleft',

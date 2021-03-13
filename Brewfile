@@ -16,13 +16,6 @@ brew "the_silver_searcher"
 brew "hub"
 brew "tig"
 
-# keyboard tools
-cask "karabiner-elements"
-
-# databases
-cask "postgres"
-
-# languages
 brew "fnm"
 brew "pyenv"
 brew "pyenv-virtualenv"
@@ -30,4 +23,4 @@ brew "zlib" # needed for pyenv installing
 brew "sqlite"
 
 tap "homebrew/cask-fonts"
-cask "font-hack-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
