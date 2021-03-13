@@ -11,7 +11,7 @@
     untracked = yellow
 [user]
     name = John Derr
-    email = john@allovue.com
+    email = john.derr@maximos.io
     username = jderr-mx
 [alias]
     hist = log --all --decorate --oneline --graph
