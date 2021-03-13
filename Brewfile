@@ -21,6 +21,6 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 brew "zlib" # needed for pyenv installing
 brew "sqlite"
-
+# fonts
 tap "homebrew/cask-fonts"
 cask "font-sauce-code-pro-nerd-font"
