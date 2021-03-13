@@ -18,6 +18,7 @@ let g:dotfiles_config_files = ['plugins.vim',
   \ 'fzf.vim',
   \ 'statusline.vim',
   \ 'colors.vim',
+  \ 'keymapping.vim',
   \ ]
 
 for f in g:dotfiles_config_files

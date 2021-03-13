@@ -17,5 +17,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-test/vim-test'
 Plug 'mhinz/vim-startify'
+Plug 'osyo-manga/vim-over'
 call plug#end()
 
