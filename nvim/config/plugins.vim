@@ -18,5 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-test/vim-test'
 Plug 'mhinz/vim-startify'
 Plug 'osyo-manga/vim-over'
+Plug 'elixir-editors/vim-elixir'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
