@@ -38,7 +38,8 @@ set ttimeoutlen=50                     " Fix delay when escaping from insert wit
 set noshowmode                         " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set nosol                              " Keep cursor in the same column if possible for G, gg, etc.
 set termguicolors                      " Welcome to Oz dorothy
-
+set smarttab
+set expandtab
 " }2
 " Treat JSON files like JavaScript {2
 "-----------------------------------------------------------------------------------

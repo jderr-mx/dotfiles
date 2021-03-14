@@ -33,7 +33,7 @@ call defx#custom#column('filename', {
       \ })
 
 autocmd FileType defx call s:defx_my_settings()
-nnoremap <silent> <Leader>tr :<C-U>:Defx -resume -buffer_name=explorer -split=vertical -vertical_preview -show-ignored-files<CR>
+nnoremap <silent> <Leader>tr :<C-U>:Defx -resume -buffer_name=explorer -split=vertical -vertical_preview <CR>
 function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> <CR>
         \ defx#is_directory() ?

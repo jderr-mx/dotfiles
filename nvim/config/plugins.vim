@@ -20,5 +20,6 @@ Plug 'mhinz/vim-startify'
 Plug 'osyo-manga/vim-over'
 Plug 'elixir-editors/vim-elixir'
 Plug 'airblade/vim-gitgutter'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
