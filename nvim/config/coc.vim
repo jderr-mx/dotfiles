@@ -1,5 +1,3 @@
-let g:coc_node_path = '/Users/john/.fnm/node-versions/v10.17.0/installation/bin/node'
-
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
