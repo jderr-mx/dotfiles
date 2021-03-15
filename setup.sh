@@ -1,12 +1,27 @@
 #!/bin/bash
+
+if [ "$1" = "new" ]; then
+    # install some stuff via home brew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew update
+    brew bundle
+fi
+
+sudo rm -rf ~/.vim > /dev/null 2>&1
+sudo rm -rf ~/.vimrc > /dev/null 2>&1
+sudo rm -rf ~/.bashrc > /dev/null 2>&1
+sudo rm -rf ~/.tmux > /dev/null 2>&1
+sudo rm -rf ~/.tmux.conf > /dev/null 2>&1
+sudo rm -rf ~/.zsh_prompt > /dev/null 2>&1
+sudo rm -rf ~/.zshrc > /dev/null 2>&1
+sudo rm -rf ~/.gitconfig > /dev/null 2>&1
+sudo rm -rf ~/.psqlrc > /dev/null 2>&1
+sudo rm -rf ~/.tigrc > /dev/null 2>&1
+sudo rm -rf ~/.config > /dev/null 2>&1
+
 # install plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-# install some stuff via home brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-brew bundle
 
 # create neovim directory
 mkdir -p ~/.config/nvim
