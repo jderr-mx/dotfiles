@@ -11,15 +11,18 @@ set nofoldenable
 " load configs
 let g:dotfiles_config_dir = stdpath('config') . '/config/'
 let g:dotfiles_config_files = ['plugins.vim',
-  \ 'base.vim',
   \ 'airline.vim',
+  \ 'ale.vim',
+  \ 'base.vim',
+  \ 'coc.vim',
+  \ 'colors.vim',
   \ 'defx.vim',
-  \ 'startify.vim',
   \ 'functions.vim',
   \ 'fzf.vim',
-  \ 'statusline.vim',
-  \ 'colors.vim',
   \ 'keymapping.vim',
+  \ 'misc.vim',
+  \ 'startify.vim',
+  \ 'statusline.vim',
   \ ]
 
 for f in g:dotfiles_config_files
