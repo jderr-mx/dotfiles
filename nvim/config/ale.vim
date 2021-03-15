@@ -6,6 +6,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
     \ 'javascript': ['eslint'],
     \ 'ruby': ['rubocop'],
+    \ 'elixir': ['mix_format'],
     \}
 let g:ale_completion_enabled=0
 let g:ale_fix_on_save = 0

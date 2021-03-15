@@ -1,0 +1,14 @@
+{
+  "tsserver.implicitProjectConfig.experimentalDecorators": true,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es5",
+  },
+  "emmet.includeLanguages": {
+    "hbs": "html",
+    "handlebars": "html",
+    "html.handlebars": "html",
+    "eelixir": "html",
+    "elixir": "html",
+  }
+}
