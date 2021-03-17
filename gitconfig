@@ -19,3 +19,5 @@
     staged = diff --name-only --cached
 [push]
     default = current
+[pull]
+	rebase = false

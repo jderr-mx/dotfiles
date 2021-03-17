@@ -10,5 +10,6 @@
     "html.handlebars": "html",
     "eelixir": "html",
     "elixir": "html",
-  }
+  },
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
 }

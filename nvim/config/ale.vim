@@ -2,6 +2,7 @@ let g:ale_sign_column_always=1
 let g:ale_linters = {
     \ 'javascript': ['eslint'],
     \ 'ruby': ['rubocop'],
+    \ 'elixir': ['elixir_ls'],
     \}
 let g:ale_fixers = {
     \ 'javascript': ['eslint'],
