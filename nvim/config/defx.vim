@@ -5,6 +5,7 @@ call defx#custom#option('_', {
       \ 'split': 'vertical',
       \ 'direction': 'topleft',
       \ 'show_ignored_files': 0,
+      \ 'ignored_files': 'node_modules,.DS_Store',
       \ 'buffer_name': '',
       \ 'toggle': 1,
       \ 'resume': 1
