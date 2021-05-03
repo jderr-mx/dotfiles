@@ -21,7 +21,3 @@
     default = current
 [pull]
     rebase = false
-[remote "dokku"]
-    url = dokku@dokku.swimresults.live:hytek-results
-    fetch = +refs/heads/*:refs/remotes/dokku/*
-
