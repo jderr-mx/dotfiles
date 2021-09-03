@@ -2,7 +2,7 @@
 export FZF_DEFAULT_COMMAND='fd --type f'
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.fnm:$PATH"
 
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
 export RAILS_MAX_THREADS=1
 
 if [[ -s $HOME/.rvm/scripts/rvm ]]; then

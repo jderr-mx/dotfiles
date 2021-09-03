@@ -1,4 +1,6 @@
 "defx
+let g:defx_icons_column_length = 2
+
 call defx#custom#option('_', {
       \ 'columns': 'git:indent:icons:filename:mark',
       \ 'winwidth': 40,
@@ -38,7 +40,7 @@ nnoremap <silent> <Leader>tr :<C-U>:Defx -resume -buffer_name=explorer -split=ve
 function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> <CR>
         \ defx#is_directory() ?
-        \ defx#do_action('open_tree') :
+        \ defx#do_action('open_or_close_tree') :
         \ defx#do_action('drop')
      nnoremap <silent><buffer><expr> l
         \ defx#is_directory() ? defx#do_action('open') : 0
