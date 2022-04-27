@@ -20,4 +20,5 @@ Plug 'osyo-manga/vim-over'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
