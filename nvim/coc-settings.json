@@ -11,5 +11,6 @@
     "eelixir": "html",
     "elixir": "html",
   },
-  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
+  "elixirLS.mixEnv": "dev",
 }

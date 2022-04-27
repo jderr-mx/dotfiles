@@ -7,6 +7,8 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set nofoldenable
+" 0.6 changed the mapping of Y to $y, muscle memory says no :o
+noremap Y yy
 
 " load configs
 let g:dotfiles_config_dir = stdpath('config') . '/config/'
