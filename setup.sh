@@ -35,3 +35,7 @@ ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/dotfiles/zsh/zsh_prompt ~/.zsh_prompt
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/tmux ~/.tmux
+ln -s ~/dotfiles/.tool-versions ~/.tool-versions
+
+# install .tool-versions
+asdf install

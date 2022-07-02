@@ -16,7 +16,7 @@ brew "the_silver_searcher"
 brew "hub"
 brew "tig"
 
-brew "fnm"
+brew "asdf"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "zlib" # needed for pyenv installing
