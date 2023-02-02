@@ -14,4 +14,6 @@ alias rails-demo="USE_MAILCATCHER=1 MULTITENANT=1 CUSTOMER=demo rails s"
 alias lint-rails="bundle exec rubocop"
 alias rails-serve="USE_MAILCATCHER=1 rails s"
 alias rails-test="RAILS_ENV=test rails s"
+alias psql="pgcli"
 . /usr/local/opt/asdf/libexec/asdf.sh
+alias purge_local_branches="git branch | grep -v "main" | grep -v \"\*\" | xargs git branch -D "
