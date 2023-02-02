@@ -1,0 +1,23 @@
+[color]
+    ui = true
+    branch = true
+    diff = true
+    interactive = true
+    status = true
+[color "status"]
+    added = green
+    changed = red
+    deleted = red
+    untracked = yellow
+[user]
+    name = John Derr
+    email = jderr@allvirtual.cloud
+    username = jderr-allvirtual
+[alias]
+    hist = log --all --decorate --oneline --graph
+    co = checkout
+    staged = diff --name-only --cached
+[push]
+    default = current
+[pull]
+    rebase = false

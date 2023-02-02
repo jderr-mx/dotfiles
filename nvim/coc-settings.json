@@ -10,7 +10,10 @@
     "html.handlebars": "html",
     "eelixir": "html",
     "elixir": "html",
+    "astro": "html",
+    "javascript": "javascriptreact"
   },
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
   "elixirLS.mixEnv": "dev",
+  "svelte.enable-ts-plugin": true,
 }
