@@ -22,4 +22,5 @@ Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
