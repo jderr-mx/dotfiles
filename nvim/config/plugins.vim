@@ -18,9 +18,7 @@ Plug 'vim-test/vim-test'
 Plug 'mhinz/vim-startify'
 Plug 'osyo-manga/vim-over'
 Plug 'airblade/vim-gitgutter'
-Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'elixir-editors/vim-elixir'
 call plug#end()

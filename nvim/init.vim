@@ -26,6 +26,7 @@ let g:dotfiles_config_files = ['plugins.vim',
   \ 'misc.vim',
   \ 'startify.vim',
   \ 'statusline.vim',
+  \ 'treesitter.vim',
   \ ]
 
 for f in g:dotfiles_config_files

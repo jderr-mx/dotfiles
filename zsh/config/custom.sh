@@ -1,10 +1,11 @@
 [[ $TMUX = "" ]] && export TERM="screen-256color"
 export FZF_DEFAULT_COMMAND='fd --type f'
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.fnm:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.fnm:/usr/local/sbin:$PATH"
 
 export RAILS_MAX_THREADS=1
 
-alias pg_start="launchctl load /usr/local/opt/postgres/homebrew.mxcl.postgresql.plist"
+alias pg_start="/usr/local/opt/postgresql/bin/postgres -D /usr/local/var/postgres"
+# alias pg_start="launchctl load /usr/local/opt/postgres/homebrew.mxcl.postgresql.plist"
 alias pg_stop="launchctl unload /usr/local/opt/postgres/homebrew.mxcl.postgresql.plist"
 alias ember-exam="ember exam --split=2 --parallel | grep \"^not ok\""
 alias elixir-lint="mix format --check-formatted && mix lint"
