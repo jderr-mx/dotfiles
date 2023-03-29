@@ -6,7 +6,6 @@ let g:ale_linters = {
     \ 'elixir': ['elixir-ls', 'credo'],
     \ 'eelixir': ['elixir-ls', 'credo'],
     \ 'html.handlebars': ['embertemplatelint'],
-    \ 'svelte': ['eslint'],
     \}
 let g:ale_fixers = {
     \ 'javascript': ['eslint', 'prettier'],
@@ -15,7 +14,6 @@ let g:ale_fixers = {
     \ 'elixir': ['mix_format'],
     \ 'eelixir': ['mix_format'],
     \ 'html.handlebars': ['prettier'],
-    \ 'svelte': ['eslint', 'prettier'],
     \}
 let g:ale_completion_enabled=0
 let g:ale_fix_on_save = 1
