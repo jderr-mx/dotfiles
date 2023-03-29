@@ -1,5 +1,5 @@
-erlang 25.0
-elixir 1.14.1-otp-25
+erlang 25.2
+elixir 1.14.3
 nodejs 16.15.1
 ruby 3.1.2
 php 8.0.17
