@@ -24,4 +24,5 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'vim-vdebug/vdebug'
 Plug 'elixir-editors/vim-elixir'
 Plug 'wuelnerdotexe/vim-astro'
+Plug 'tpope/vim-unimpaired'
 call plug#end()

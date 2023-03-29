@@ -1,4 +1,4 @@
 [includeIf "gitdir:~/git/"]
   path = ~/.gitconfig.personal
-[includeIf "gitdir:~/avg/"]
+[includeIf "gitdir:/Volumes/AVG/"]
   path = ~/.gitconfig.avg
