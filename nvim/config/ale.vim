@@ -1,12 +1,14 @@
 let g:ale_sign_column_always=1
 let g:ale_linters = {
     \ 'javascript': ['eslint'],
+    \ 'svelte': ['eslint'],
     \ 'ruby': ['rubocop'],
     \ 'elixir': ['elixir-ls', 'credo'],
     \ 'eelixir': ['elixir-ls', 'credo'],
     \}
 let g:ale_fixers = {
-    \ 'javascript': ['eslint'],
+    \ 'javascript': ['eslint', 'prettier'],
+    \ 'svelte': ['eslint', 'prettier'],
     \ 'ruby': ['rubocop'],
     \ 'elixir': ['mix_format'],
     \ 'eelixir': ['mix_format'],
