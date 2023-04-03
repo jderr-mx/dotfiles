@@ -9,10 +9,6 @@
     changed = red
     deleted = red
     untracked = yellow
-[user]
-    name = John Derr
-    email = john.derr@allovue.com
-    username = jderr-mx
 [alias]
     hist = log --all --decorate --oneline --graph
     co = checkout
@@ -21,3 +17,5 @@
     default = current
 [pull]
     rebase = false
+[include]
+    path = ~/.gitcustom/gitcustom
