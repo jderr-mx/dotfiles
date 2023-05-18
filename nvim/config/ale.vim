@@ -5,6 +5,7 @@ let g:ale_linters = {
     \ 'ruby': ['rubocop'],
     \ 'elixir': ['elixir-ls', 'credo'],
     \ 'eelixir': ['elixir-ls', 'credo'],
+    \ 'heex': ['elixir-ls', 'credo'],
     \}
 let g:ale_fixers = {
     \ 'javascript': ['eslint', 'prettier'],
@@ -12,6 +13,7 @@ let g:ale_fixers = {
     \ 'ruby': ['rubocop'],
     \ 'elixir': ['mix_format'],
     \ 'eelixir': ['mix_format'],
+    \ 'heex': ['mix_format'],
     \}
 let g:ale_completion_enabled=0
 let g:ale_fix_on_save = 1
