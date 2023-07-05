@@ -153,7 +153,7 @@ fi
 # >>1
 
 # Source Syntaxhighlighting <<1
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # >>1
 # Source Custom Configurations <<1
 for fname in $(find ~/dotfiles/zsh/config -name "*.sh*"); do
