@@ -19,6 +19,7 @@ sudo rm -rf ~/.gitcustom > /dev/null 2>&1
 sudo rm -rf ~/.psqlrc > /dev/null 2>&1
 sudo rm -rf ~/.tigrc > /dev/null 2>&1
 sudo rm -rf ~/.config > /dev/null 2>&1
+sudo rm -rf ~/.gitcustom > /dev/null 2>&1
 
 # install plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -31,7 +32,7 @@ mkdir -p ~/.config/nvim
 ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/nvim/config ~/.config/nvim/config
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/gitcustom ~/.gitcustom
+ln -s ~/gitcustom/gitcustom ~/.gitcustom
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/dotfiles/zsh/zsh_prompt ~/.zsh_prompt
