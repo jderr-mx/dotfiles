@@ -17,7 +17,8 @@
     default = current
 [pull]
     rebase = false
-[include]
-    path = ~/.gitcustom/gitcustom
 [init]
-	defaultBranch = main
+  defaultBranch = main
+[include]
+  path = ~/.gitcustom/gitcustom
+
