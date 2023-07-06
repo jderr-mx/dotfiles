@@ -25,7 +25,7 @@ set noswapfile                         " Ain't nobody got time for swap files
 set noerrorbells                       " Don't beep
 set nowrap                             " Do not wrap lines
 set showbreak=↪\                       " Character to precede line wraps for the times I turn it on
-set popt=left:8pc,right:3pc            " Print options
+"set popt=left:8pc,right:3pc            " Print options
 set showcmd                            " Display incomplete commands in the bottom line of the screen
 set expandtab                          " Make vim use spaces and not tabs
 set undolevels=1000                    " Never can be too careful when it comes to undoing

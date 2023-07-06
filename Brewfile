@@ -24,3 +24,7 @@ brew "sqlite"
 # fonts
 tap "homebrew/cask-fonts"
 cask "font-sauce-code-pro-nerd-font"
+
+#postgres
+brew "postgresql@15"
+brew "pgcli"
