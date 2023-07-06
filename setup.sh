@@ -39,6 +39,7 @@ ln -s ~/dotfiles/zsh/zsh_prompt ~/.zsh_prompt
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/tmux ~/.tmux
 ln -s ~/dotfiles/.tool-versions ~/.tool-versions
+ln -s ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 # install .tool-versions
 asdf install

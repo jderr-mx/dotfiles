@@ -4,9 +4,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/lo
 
 export RAILS_MAX_THREADS=1
 
-alias pg_start="/usr/local/opt/postgresql/bin/postgres -D /usr/local/var/postgres"
-# alias pg_start="launchctl load /usr/local/opt/postgres/homebrew.mxcl.postgresql.plist"
-alias pg_stop="launchctl unload /usr/local/opt/postgres/homebrew.mxcl.postgresql.plist"
+alias pg_start="launchctl load  /opt/homebrew/opt/postgresql@15/homebrew.mxcl.postgresql@15.plist"
+alias pg_stop="launchctl unload /opt/homebrew/opt/postgresql@15/homebrew.mxcl.postgresql@15.plist"
 alias ember-exam="ember exam --split=2 --parallel | grep \"^not ok\""
 alias elixir-lint="mix format --check-formatted && mix lint"
 alias migrate-dev="rake db:migrate RAILS_ENV=development"
