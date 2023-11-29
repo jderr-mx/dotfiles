@@ -1,6 +1,6 @@
 [[ $TMUX = "" ]] && export TERM="screen-256color"
 export FZF_DEFAULT_COMMAND='fd --type f'
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/sbin:$PATH:/opt/homebrew/bin"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/sbin:$PATH:/opt/homebrew/bin:/opt/homebrew/Cellar/postgresql@15/15.4/bin"
 
 export RAILS_MAX_THREADS=1
 

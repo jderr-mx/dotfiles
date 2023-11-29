@@ -19,7 +19,7 @@ Plug 'mhinz/vim-startify'
 Plug 'osyo-manga/vim-over'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim', {'tag': 'v2.20.8'}
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'kshenoy/vim-signature'
 call plug#end()
