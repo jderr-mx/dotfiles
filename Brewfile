@@ -3,6 +3,7 @@ cask "iterm2"
 brew "tmux"
 brew "zsh"
 brew "zsh-syntax-highlighting"
+brew "fd"
 
 # vim tools
 brew "nvim"
