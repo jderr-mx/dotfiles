@@ -1,12 +1,12 @@
 "fzf
 set rtp+=/usr/local/opt/fzf
 
-nnoremap <Leader>sp :Ag<CR>
-nnoremap <Leader>b :Buffers<CR>
-nnoremap <Leader>gl :Commits<CR>
-noremap <Leader>ff :Files<CR>
-nnoremap <Leader>gs :GFiles?<CR>
-nnoremap <Leader>h :History<CR>
+"nnoremap <Leader>sp :Ag<CR>
+"nnoremap <Leader>b :Buffers<CR>
+"nnoremap <Leader>gl :Commits<CR>
+"noremap <Leader>ff :Files<CR>
+"nnoremap <Leader>gs :GFiles?<CR>
+"nnoremap <Leader>h :History<CR>
 nnoremap <Leader>bd :BD<CR>
 
 function! Bufs()
