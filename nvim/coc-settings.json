@@ -14,4 +14,7 @@
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
   "elixirLS.mixEnv": "dev",
   "svelte.enable-ts-plugin": true,
+  "elixirLS.suggestSpecs": true,
+  "elixirLS.trace.server": "verbose",
+  "codeLens.enable": true,
 }
