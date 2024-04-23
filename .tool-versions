@@ -1,6 +1,6 @@
-erlang 25.2
-elixir 1.14.3
-nodejs 19.5.0
-ruby 2.6.10
+erlang 26.1.2
+elixir 1.16.0-otp-26
+ruby 3.0.6
 python 3.11.4 2.7.18
+nodejs 20.11.0
 yarn 1.22.19
