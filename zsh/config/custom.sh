@@ -1,11 +1,11 @@
 [[ $TMUX = "" ]] && export TERM="screen-256color"
 export FZF_DEFAULT_COMMAND='fd --type f'
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/sbin:$PATH:/opt/homebrew/bin:/opt/homebrew/Cellar/postgresql@15/15.4/bin"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/sbin:$PATH:/opt/homebrew/bin:/opt/homebrew/Cellar/postgresql@16/16.3/bin"
 
 export RAILS_MAX_THREADS=1
 
-alias pg_start="launchctl load  /opt/homebrew/opt/postgresql@15/homebrew.mxcl.postgresql@15.plist"
-alias pg_stop="launchctl unload /opt/homebrew/opt/postgresql@15/homebrew.mxcl.postgresql@15.plist"
+alias pg_start="launchctl load  /opt/homebrew/opt/postgresql@16/homebrew.mxcl.postgresql@16.plist"
+alias pg_stop="launchctl unload /opt/homebrew/opt/postgresql@16/homebrew.mxcl.postgresql@16.plist"
 alias ember-exam="ember exam --split=2 --parallel | grep \"^not ok\""
 alias elixir-lint="mix format --check-formatted && mix lint"
 alias migrate-dev="rake db:migrate RAILS_ENV=development"
