@@ -34,3 +34,17 @@ let g:dotfiles_config_files = ['plugins.vim',
 for f in g:dotfiles_config_files
   execute 'source' g:dotfiles_config_dir . f
 endfor
+
+lua << EOF
+require('telescope').setup {}
+require('telescope').load_extension('fzf')
+require('telescope').setup{
+  defaults = {
+    file_ignore_patterns = {
+      "node_modules"
+    }
+  }
+}
+EOF
+
+set shell=/bin/zsh

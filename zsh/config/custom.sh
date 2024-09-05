@@ -17,3 +17,4 @@ alias rails-test="RAILS_ENV=test rails s"
 alias psql="pgcli"
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 alias purge_local_branches="git branch | grep -v "main" | grep -v \"\*\" | xargs git branch -D "
+alias mycli-avg="mycli -u dba --port=33600 prod"

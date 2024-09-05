@@ -1,6 +1,7 @@
 erlang 25.2
-elixir 1.14.3
-nodejs 19.5.0
-ruby 2.6.10
+elixir 1.16.2
+nodejs 20.4.0
+ruby 3.1.2
 python 3.11.4 2.7.18
 yarn 1.22.19
+php 8.0.30
