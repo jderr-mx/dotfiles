@@ -18,7 +18,7 @@ let g:dotfiles_config_files = ['plugins.vim',
   \ 'base.vim',
   \ 'coc.vim',
   \ 'colors.vim',
-  \ 'defx.vim',
+  "\ 'defx.vim',
   \ 'functions.vim',
   \ 'fzf.vim',
   \ 'indent-blankline.vim',
@@ -45,6 +45,8 @@ require('telescope').setup{
     }
   }
 }
+vim.keymap.set('n', '<leader>tr', ':Neotree toggle=true <CR>')
 EOF
+
 
 set shell=/bin/zsh
