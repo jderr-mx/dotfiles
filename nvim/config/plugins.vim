@@ -28,4 +28,5 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()

@@ -1,3 +1,4 @@
+package.path = "/Users/john/.config/nvim/config/?.lua;" .. package.path
 vim.g.mapleader=" "
 
 vim.cmd("set number")
@@ -37,7 +38,14 @@ require('telescope').setup{
     }
   }
 }
-vim.keymap.set('n', '<leader>tr', ':Neotree toggle=true <CR>')
-
+require('neotree')
+require('gitsigns_config')
 vim.cmd("set shell=/bin/zsh")
+-- You dont need to set any of these options. These are the default ones. Only
+-- the loading is important
+require('telescope').setup()
+
+-- To get fzf loaded and working with telescope, you need to call
+-- load_extension, somewhere after setup function:
+require('telescope').load_extension('fzf')
 
