@@ -10,8 +10,8 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set nofoldenable")
 -- 0.6 changed the mapping of Y to $y, muscle memory says no :o
 vim.cmd("noremap Y yy")
+-- load old dotfiles
 local dotfiles_config_dir = vim.fs.joinpath(vim.fn.stdpath('config'), 'config')
-
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'plugins.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'airline.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'ale.vim'))
@@ -29,6 +29,8 @@ vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'treesitter.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'telescope.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'custom.vim'))
 
+vim.cmd("set shell=/bin/zsh")
+
 require('telescope').setup {}
 require('telescope').load_extension('fzf')
 require('telescope').setup{
@@ -40,12 +42,7 @@ require('telescope').setup{
 }
 require('neotree')
 require('gitsigns_config')
-vim.cmd("set shell=/bin/zsh")
--- You dont need to set any of these options. These are the default ones. Only
--- the loading is important
-require('telescope').setup()
 
--- To get fzf loaded and working with telescope, you need to call
--- load_extension, somewhere after setup function:
+require('telescope').setup()
 require('telescope').load_extension('fzf')
 
