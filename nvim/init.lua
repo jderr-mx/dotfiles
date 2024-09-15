@@ -9,9 +9,15 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set nofoldenable")
 -- 0.6 changed the mapping of Y to $y, muscle memory says no :o
 vim.cmd("noremap Y yy")
--- load legacy vimscripts
+-- load the config directory
+package.path = "/Users/john/.config/nvim/config/?.lua;" .. package.path
+-- load my custom configs
+require('plugins')
+require('neotree')
+require('gitsigns_config')
+require('fzf_lua')-- load legacy vimscripts
+
 local dotfiles_config_dir = vim.fs.joinpath(vim.fn.stdpath('config'), 'config')
-vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'plugins.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'airline.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'ale.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'base.vim'))
@@ -28,9 +34,4 @@ vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'treesitter.vim'))
 vim.cmd.source(vim.fs.joinpath(dotfiles_config_dir, 'custom.vim'))
 
 vim.cmd("set shell=/bin/zsh")
--- load the config directory
-package.path = "/Users/john/.config/nvim/config/?.lua;" .. package.path
--- load my custom configs
-require('neotree')
-require('gitsigns_config')
-require('fzf_lua')
+
