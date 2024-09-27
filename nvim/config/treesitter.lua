@@ -1,4 +1,3 @@
-lua << EOF
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "css", "html", "glimmer", "elixir", "heex", "javascript", "php", "sql", "astro", "json", "lua", "bash", "svelte"},
   auto_install = true,
@@ -7,4 +6,3 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-EOF
