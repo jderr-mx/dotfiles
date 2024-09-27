@@ -2,7 +2,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-colorscheme one
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
