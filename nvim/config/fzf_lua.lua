@@ -3,7 +3,12 @@ require('fzf-lua').setup({
     width = 1.0,
     height = 0.4,
     row= 1.0,
-  }
+  },
+  keymap = {
+    fzf = {
+      ["ctrl-q"] = "select-all+accept"
+    },
+  },
 })
 vim.keymap.set('n', '<leader>b', require('fzf-lua').buffers, { desc = "Fzf Buffers"})
 vim.keymap.set('n', '<leader>ff', require('fzf-lua').files, { desc = "Fzf Files"})
