@@ -13,6 +13,8 @@
   },
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
   "elixirLS.mixEnv": "dev",
+  "elixirLS.SuggestSpecs": true,
+  "elixirLS.trace.server": true,
   "svelte.enable-ts-plugin": true,
   "solargraph.commandPath": "~/.asdf/shims/solargraph",
 }
