@@ -28,5 +28,5 @@ tap "homebrew/cask-fonts"
 cask "font-sauce-code-pro-nerd-font"
 
 #postgres
-brew "postgresql@15"
+brew "postgresql@16"
 brew "pgcli"

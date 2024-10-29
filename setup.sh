@@ -29,7 +29,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 mkdir -p ~/.config/nvim
 
 #sym link configs
-ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+ln -s ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
 ln -s ~/dotfiles/nvim/config ~/.config/nvim/config
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/gitcustom ~/.gitcustom
