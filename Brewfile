@@ -17,12 +17,14 @@ brew "the_silver_searcher"
 # Source Control Tools
 brew "hub"
 brew "tig"
+brew "lazygit"
 
 brew "asdf"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "zlib" # needed for pyenv installing
 brew "sqlite"
+
 # fonts
 tap "homebrew/cask-fonts"
 cask "font-sauce-code-pro-nerd-font"
